@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Restaurant Page</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul class="menu" id="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Order</a></li>
+				<li><a href="#">Food</a></li>
+				<li><a href="#">Restaurant</a></li>
+				<li><a href="#">Testimonials</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+			<div class="hamburger">
+				<img src="menu-bar.png" alt="" />
+			</div>
+		</nav>
+	</header>
+	<!-- ------------------------ -->
+	<section class="hero">
+		<div class="hero-text">
+			<br>
+			<br>
+			<h1>LOREM IPSUM</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id
+				est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus
+				euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam
+				ut tristique. Curabitur nec faucibus purus. Quisque congue sem nec
+				justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac porta
+				viverra.
+			</p>
+			<button>Click Me</button>
+		</div>
+		<div class="hero-image">
+			<!-- <img src="pexels-robin-stickel-70497.jpg" alt="Placeholder image of a hamburger and fries"> -->
+		</div>
+	</section>
+
+	<!-- -------------------- -->
+
+	<div class="main-container">
+		<div class="left-panel">
+			<!-- Placeholder images. Replace 'src' with your actual image URLs -->
+			<div class="grid-container">
+				<div class="image-card img1">
+					<img src="pexels-rachel-claire-6752433.jpg" alt="Image description here" />
+				</div>
+				<div class="image-card img2">
+					<img src="pexels-eva-bronzini-6141651.jpg" alt="Image description here" />
+				</div>
+				<div class="image-card img3">
+					<img src="pexels-mister-mister-3434523.jpg" alt="Image description here" />
+				</div>
+			</div>
+
+			<!-- Repeat the above div for more images as needed -->
+		</div>
+
+		<div class="right-panel">
+			<div class="text-section">
+				<p>LOREM IPSUM</p>
+				<h1>LOREM IPSUM SET ADEMIR</h1>
+				<a href="#" class="btn">Click →</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var hamburger = document.querySelector(".hamburger");
+			hamburger.addEventListener("click", function () {
+				var menu = document.getElementById("menu");
+				if (menu.style.display === "block") {
+					menu.style.display = "none";
+				} else {
+					menu.style.display = "block";
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
